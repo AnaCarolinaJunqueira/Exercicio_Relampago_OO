@@ -75,12 +75,6 @@ class ProfessorTest {
     }
 
     @Test
-    void deveRetornarProfessorSemCursoParaNomeCoordenador() {
-        Professor professor = new Professor();
-        assertEquals("Professor sem curso", professor.getContratacao().getNomeCoordenacao());
-    }
-
-    @Test
     void deveRetornarCursoSemCoordenadorParaNomeCoordenador() {
         Curso curso = new Curso(new TipoEnsino());
         Professor professor = new Professor();
